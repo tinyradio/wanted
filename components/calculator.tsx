@@ -108,7 +108,7 @@ export default function Calculator() {
   };
 
   const buttons = [
-    { label: "C", action: clear, variant: "secondary" as const, className: "text-destructive font-semibold" },
+    { label: "C", action: clear, variant: "secondary" as const, className: "text-[#3366FF] font-semibold" },
     { label: "±", action: toggleSign, variant: "secondary" as const },
     { label: "%", action: handlePercent, variant: "secondary" as const },
     { label: "÷", action: () => handleOperator("÷"), variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white" },
@@ -131,11 +131,11 @@ export default function Calculator() {
     { label: "⌫", action: deleteLast, variant: "outline" as const },
     { label: "0", action: () => inputDigit("0"), variant: "outline" as const },
     { label: ".", action: inputDecimal, variant: "outline" as const },
-    { label: "=", action: handleEquals, variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white" },
+    { label: "=", action: handleEquals, variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white text-xl font-semibold" },
   ];
 
   return (
-    <Card className="w-full max-w-sm shadow-2xl">
+    <Card className="w-full max-w-sm rounded-2xl shadow-[0_8px_32px_-2px_rgba(0,0,0,0.15)]">
       <CardHeader className="pb-2">
         <CardTitle className="text-center text-lg">계산기</CardTitle>
       </CardHeader>
