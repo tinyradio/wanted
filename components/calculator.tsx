@@ -111,27 +111,27 @@ export default function Calculator() {
     { label: "C", action: clear, variant: "secondary" as const, className: "text-destructive font-semibold" },
     { label: "±", action: toggleSign, variant: "secondary" as const },
     { label: "%", action: handlePercent, variant: "secondary" as const },
-    { label: "÷", action: () => handleOperator("÷"), variant: "default" as const, className: "bg-orange-500 hover:bg-orange-600 text-white" },
+    { label: "÷", action: () => handleOperator("÷"), variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white" },
 
     { label: "7", action: () => inputDigit("7"), variant: "outline" as const },
     { label: "8", action: () => inputDigit("8"), variant: "outline" as const },
     { label: "9", action: () => inputDigit("9"), variant: "outline" as const },
-    { label: "×", action: () => handleOperator("×"), variant: "default" as const, className: "bg-orange-500 hover:bg-orange-600 text-white" },
+    { label: "×", action: () => handleOperator("×"), variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white" },
 
     { label: "4", action: () => inputDigit("4"), variant: "outline" as const },
     { label: "5", action: () => inputDigit("5"), variant: "outline" as const },
     { label: "6", action: () => inputDigit("6"), variant: "outline" as const },
-    { label: "-", action: () => handleOperator("-"), variant: "default" as const, className: "bg-orange-500 hover:bg-orange-600 text-white" },
+    { label: "-", action: () => handleOperator("-"), variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white" },
 
     { label: "1", action: () => inputDigit("1"), variant: "outline" as const },
     { label: "2", action: () => inputDigit("2"), variant: "outline" as const },
     { label: "3", action: () => inputDigit("3"), variant: "outline" as const },
-    { label: "+", action: () => handleOperator("+"), variant: "default" as const, className: "bg-orange-500 hover:bg-orange-600 text-white" },
+    { label: "+", action: () => handleOperator("+"), variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white" },
 
     { label: "⌫", action: deleteLast, variant: "outline" as const },
     { label: "0", action: () => inputDigit("0"), variant: "outline" as const },
     { label: ".", action: inputDecimal, variant: "outline" as const },
-    { label: "=", action: handleEquals, variant: "default" as const, className: "bg-orange-500 hover:bg-orange-600 text-white" },
+    { label: "=", action: handleEquals, variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white" },
   ];
 
   return (
