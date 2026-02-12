@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 type Token = string | number;
 
@@ -257,10 +257,7 @@ export default function Calculator() {
 
   return (
     <Card className="w-full max-w-sm rounded-2xl border border-white/20 bg-[#010101]/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
-      <CardHeader className="pb-2">
-        <CardTitle className="text-center text-lg text-white">Calculating Machine</CardTitle>
-      </CardHeader>
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-4 pt-4 pb-5">
         {/* Expression display — = 후 수식 표시 */}
         <div className="text-right text-base text-[#94A3B8] h-5 px-2 truncate">
           {expressionText}
