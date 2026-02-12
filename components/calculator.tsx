@@ -232,31 +232,31 @@ export default function Calculator() {
     { label: "C", action: clear, variant: "ghost" as const, className: "bg-white/15 backdrop-blur-sm border border-white/20 text-white hover:bg-white/25 font-semibold" },
     { label: "±", action: toggleSign, variant: "ghost" as const, className: "bg-white/15 backdrop-blur-sm border border-white/20 text-white hover:bg-white/25" },
     { label: "%", action: handlePercent, variant: "ghost" as const, className: "bg-white/15 backdrop-blur-sm border border-white/20 text-white hover:bg-white/25" },
-    { label: "÷", action: () => handleOperator("÷"), variant: "ghost" as const, className: "bg-[#3366FF]/60 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]/80" },
+    { label: "÷", action: () => handleOperator("÷"), variant: "ghost" as const, className: "bg-[#3366FF]/90 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]" },
 
     { label: "7", action: () => inputDigit("7"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
     { label: "8", action: () => inputDigit("8"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
     { label: "9", action: () => inputDigit("9"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
-    { label: "×", action: () => handleOperator("×"), variant: "ghost" as const, className: "bg-[#3366FF]/60 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]/80" },
+    { label: "×", action: () => handleOperator("×"), variant: "ghost" as const, className: "bg-[#3366FF]/90 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]" },
 
     { label: "4", action: () => inputDigit("4"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
     { label: "5", action: () => inputDigit("5"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
     { label: "6", action: () => inputDigit("6"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
-    { label: "-", action: () => handleOperator("-"), variant: "ghost" as const, className: "bg-[#3366FF]/60 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]/80" },
+    { label: "-", action: () => handleOperator("-"), variant: "ghost" as const, className: "bg-[#3366FF]/90 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]" },
 
     { label: "1", action: () => inputDigit("1"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
     { label: "2", action: () => inputDigit("2"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
     { label: "3", action: () => inputDigit("3"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
-    { label: "+", action: () => handleOperator("+"), variant: "ghost" as const, className: "bg-[#3366FF]/60 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]/80" },
+    { label: "+", action: () => handleOperator("+"), variant: "ghost" as const, className: "bg-[#3366FF]/90 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]" },
 
     { label: "⌫", action: deleteLast, variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
     { label: "0", action: () => inputDigit("0"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
     { label: ".", action: inputDecimal, variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
-    { label: "=", action: handleEquals, variant: "ghost" as const, className: "bg-[#3366FF]/60 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]/80 font-semibold" },
+    { label: "=", action: handleEquals, variant: "ghost" as const, className: "bg-[#3366FF]/90 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF] font-semibold" },
   ];
 
   return (
-    <Card className="w-full max-w-sm rounded-2xl border border-white/20 bg-white/10 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
+    <Card className="w-full max-w-sm rounded-2xl border border-white/20 bg-[#010101]/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
       <CardHeader className="pb-2">
         <CardTitle className="text-center text-lg text-white">Calculating Machine</CardTitle>
       </CardHeader>
