@@ -1,15 +1,20 @@
 import Calculator from "@/components/calculator";
+import Iridescence from "@/components/iridescence";
 
 export default function Home() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center bg-cover bg-center bg-no-repeat p-4"
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1561835503-648c2f1169d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920')",
-      }}
-    >
-      <Calculator />
+    <div className="relative flex min-h-screen items-center justify-center p-4 bg-black">
+      <div className="absolute inset-0">
+        <Iridescence
+          color={[0.3, 0.5, 1.0]}
+          speed={1.2}
+          amplitude={0.1}
+          mouseReact={true}
+        />
+      </div>
+      <div className="relative z-10">
+        <Calculator />
+      </div>
     </div>
   );
 }
