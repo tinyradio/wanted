@@ -267,7 +267,7 @@ export default function Calculator() {
         </div>
 
         {/* Main display — 입력 중 수식, = 후 결과 */}
-        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-4 text-right overflow-hidden">
+        <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-4 text-right overflow-hidden">
           <span
             className={`font-bold tracking-wide text-white block truncate ${
               showResult ? "text-3xl" : mainDisplayText.length > 12 ? "text-xl" : "text-3xl"
