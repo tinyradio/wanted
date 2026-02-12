@@ -229,34 +229,34 @@ export default function Calculator() {
     : buildExpressionString(tokens, currentInput) || "0";
 
   const buttons = [
-    { label: "C", action: clear, variant: "secondary" as const, className: "text-[#3366FF] font-semibold" },
-    { label: "±", action: toggleSign, variant: "secondary" as const },
-    { label: "%", action: handlePercent, variant: "secondary" as const },
-    { label: "÷", action: () => handleOperator("÷"), variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white" },
+    { label: "C", action: clear, variant: "ghost" as const, className: "bg-white/15 backdrop-blur-sm border border-white/20 text-white hover:bg-white/25 font-semibold" },
+    { label: "±", action: toggleSign, variant: "ghost" as const, className: "bg-white/15 backdrop-blur-sm border border-white/20 text-white hover:bg-white/25" },
+    { label: "%", action: handlePercent, variant: "ghost" as const, className: "bg-white/15 backdrop-blur-sm border border-white/20 text-white hover:bg-white/25" },
+    { label: "÷", action: () => handleOperator("÷"), variant: "ghost" as const, className: "bg-[#3366FF]/60 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]/80" },
 
-    { label: "7", action: () => inputDigit("7"), variant: "outline" as const },
-    { label: "8", action: () => inputDigit("8"), variant: "outline" as const },
-    { label: "9", action: () => inputDigit("9"), variant: "outline" as const },
-    { label: "×", action: () => handleOperator("×"), variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white" },
+    { label: "7", action: () => inputDigit("7"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
+    { label: "8", action: () => inputDigit("8"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
+    { label: "9", action: () => inputDigit("9"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
+    { label: "×", action: () => handleOperator("×"), variant: "ghost" as const, className: "bg-[#3366FF]/60 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]/80" },
 
-    { label: "4", action: () => inputDigit("4"), variant: "outline" as const },
-    { label: "5", action: () => inputDigit("5"), variant: "outline" as const },
-    { label: "6", action: () => inputDigit("6"), variant: "outline" as const },
-    { label: "-", action: () => handleOperator("-"), variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white" },
+    { label: "4", action: () => inputDigit("4"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
+    { label: "5", action: () => inputDigit("5"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
+    { label: "6", action: () => inputDigit("6"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
+    { label: "-", action: () => handleOperator("-"), variant: "ghost" as const, className: "bg-[#3366FF]/60 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]/80" },
 
-    { label: "1", action: () => inputDigit("1"), variant: "outline" as const },
-    { label: "2", action: () => inputDigit("2"), variant: "outline" as const },
-    { label: "3", action: () => inputDigit("3"), variant: "outline" as const },
-    { label: "+", action: () => handleOperator("+"), variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white" },
+    { label: "1", action: () => inputDigit("1"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
+    { label: "2", action: () => inputDigit("2"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
+    { label: "3", action: () => inputDigit("3"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
+    { label: "+", action: () => handleOperator("+"), variant: "ghost" as const, className: "bg-[#3366FF]/60 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]/80" },
 
-    { label: "⌫", action: deleteLast, variant: "outline" as const },
-    { label: "0", action: () => inputDigit("0"), variant: "outline" as const },
-    { label: ".", action: inputDecimal, variant: "outline" as const },
-    { label: "=", action: handleEquals, variant: "default" as const, className: "bg-[#3366FF] hover:bg-[#2B57D9] text-white font-semibold" },
+    { label: "⌫", action: deleteLast, variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
+    { label: "0", action: () => inputDigit("0"), variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
+    { label: ".", action: inputDecimal, variant: "ghost" as const, className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20" },
+    { label: "=", action: handleEquals, variant: "ghost" as const, className: "bg-[#3366FF]/60 backdrop-blur-sm border border-[#3366FF]/30 text-white hover:bg-[#3366FF]/80 font-semibold" },
   ];
 
   return (
-    <Card className="w-full max-w-sm rounded-2xl border-0 bg-[#07080a] opacity-90 shadow-[0_8px_32px_-2px_rgba(0,0,0,0.15),0_4px_4px_rgba(0,0,0,0.25)]">
+    <Card className="w-full max-w-sm rounded-2xl border border-white/20 bg-white/10 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
       <CardHeader className="pb-2">
         <CardTitle className="text-center text-lg text-white">Calculating Machine</CardTitle>
       </CardHeader>
@@ -267,7 +267,7 @@ export default function Calculator() {
         </div>
 
         {/* Main display — 입력 중 수식, = 후 결과 */}
-        <div className="bg-[#191928cc] rounded-lg p-4 text-right overflow-hidden">
+        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-4 text-right overflow-hidden">
           <span
             className={`font-bold tracking-wide text-white block truncate ${
               showResult ? "text-3xl" : mainDisplayText.length > 12 ? "text-xl" : "text-3xl"
